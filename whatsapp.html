@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ddece5;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chat-container {
+            width: 45%;
+            max-width: 600px;
+            height: 80vh;
+            background-color: #c0dec8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(129, 43, 43, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chat-content {
+            padding: 10px;
+            overflow-y: scroll;
+            flex-grow: 1;
+        }
+        .chat-header {
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: #185e07;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        .chat-message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            max-width: 80%;
+            word-wrap: break-word;
+            position: relative;
+        }
+        .chat-message.sent {
+            background-color: #7fa1aa;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+        .chat-message.received {
+            background-color: #ffffff;
+            align-self: flex-start;
+            margin-right: auto;
+        }
+        .chat-date {
+            text-align: center;
+            font-size: 12px;
+            color: #080202;
+            margin: 20px 0;
+        }
+        .time-stamp {
+            font-size: 10px;
+            color: #999;
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Madhu</div>
+        <div class="chat-content">
+            <!-- August 18, 2024 -->
+            <div class="chat-date">August 18, 2024</div>
+            
+            <div class="chat-message received">
+                Hey! How was your weekend?
+                <span class="time-stamp">10:00 AM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                It was great, went to the beach! How about you?
+                <span class="time-stamp">10:05 AM</span>
+            </div>
+            
+            <!-- August 19, 2024 -->
+            <div class="chat-date">August 19, 2024</div>
+            
+            <div class="chat-message received">
+                Good morning! Ready for the new week?
+                <span class="time-stamp">8:30 AM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                Yeah, got lots to do. Let’s get started!
+                <span class="time-stamp">8:32 AM</span>
+            </div>
+            
+            <!-- August 20, 2024 -->
+            <div class="chat-date">August 20, 2024</div>
+            
+            <div class="chat-message received">
+                How’s work going today?
+                <span class="time-stamp">2:15 PM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                Busy, but productive. How’s yours?
+                <span class="time-stamp">2:20 PM</span>
+            </div>
+            
+            <!-- August 21, 2024 -->
+            <div class="chat-date">August 21, 2024</div>
+            
+            <div class="chat-message received">
+                Do you have time for a quick call later?
+                <span class="time-stamp">11:00 AM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                Sure, let’s do it at 3 PM.
+                <span class="time-stamp">11:05 AM</span>
+            </div>
+
+            <!-- August 22, 2024 -->
+            <div class="chat-date">August 22, 2024</div>
+            
+            <div class="chat-message received">
+                Just sent you the report. Did you get it?
+                <span class="time-stamp">1:30 PM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                Yes, got it. I’ll review it now.
+                <span class="time-stamp">1:35 PM</span>
+            </div>
+
+            <!-- August 23, 2024 -->
+            <div class="chat-date">August 23, 2024</div>
+            
+            <div class="chat-message received">
+                Any plans for the weekend?
+                <span class="time-stamp">4:00 PM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                Not sure yet, might just relax. You?
+                <span class="time-stamp">4:05 PM</span>
+            </div>
+
+            <!-- August 24, 2024 -->
+            <div class="chat-date">August 24, 2024</div>
+            
+            <div class="chat-message received">
+                Let’s catch up over coffee tomorrow?
+                <span class="time-stamp">3:00 PM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                Sounds good! See you at 11 AM?
+                <span class="time-stamp">3:05 PM</span>
+            </div>
+
+            <!-- August 25, 2024 -->
+            <div class="chat-date">August 25, 2024</div>
+            
+            <div class="chat-message received">
+                Had a great time today, thanks!
+                <span class="time-stamp">1:00 PM</span>
+            </div>
+            
+            <div class="chat-message sent">
+                Me too! Let’s do it again soon.
+                <span class="time-stamp">1:05 PM</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
